@@ -101,7 +101,7 @@ function apigetFromDatabase(bilnumer) {
         data.forEach(car => {
             if (car.bilnumer == bilnumer.toLowerCase()) {
                 localStorage.setItem('working_numer', bilnumer)
-                window.location.href = 'info.html'
+                window.location.href = 'info'
             }
         })
     })
@@ -119,9 +119,9 @@ function apigetFromUsers(netfang, lykilord) {
                 if (user.lykilord == lykilord) {
                     localStorage.setItem('current_notandi', netfang)
                     if (user.notendaTypa == "notandi"){
-                        setTimeout(function(){window.location.href = "userPage.html"}, 500);
+                        setTimeout(function(){window.location.href = "userPage"}, 500);
                     } else if (user.notendaTypa == "rekstraraðili"){
-                        setTimeout(function(){window.location.href = "companyPage.html"}, 500);
+                        setTimeout(function(){window.location.href = "companyPage"}, 500);
                     }
                 } else {
                     loginErrorMsg.style.opacity = 1;
