@@ -1,0 +1,320 @@
+[
+    {
+      "id": 1,
+      "bilnumer": "mtz01",
+      "typa": "Opel Astra",
+      "argerd": "2014",
+      "akstur": "135000km",
+      "nyskrad": "12.10.2019",
+      "eigandi": {
+        "notendanafn": "user",
+        "nafn": "Valgeir Níls Vignisson",
+        "kennitala": "230102-2790",
+        "heimilisfang": "Bakkasel 31, 109",
+        "simanumer": "+354 666-0812"
+      },
+      "tjonasaga": {
+        "fjoldiTjona": 1,
+        "tjon1": {
+          "typa": "Velta",
+          "dagsetning": "15.04.2018",
+          "lagad": "20.07.2018",
+          "vottad": "Max1",
+          "kvittun": "./img/fake_kvittun.pdf",
+          "skiptUm":{
+            "skiptUm1": "Hurð, bílstjóra, framan",
+            "skiptUm2": "Framrúða",
+            "skiptUm3": "Öxull, framan"
+          }
+        }
+      },
+      "smurbok": {
+        "fjoldiSmurninga": 2,
+        "smurning1": {
+          "dagsetning": "15.04.2018",
+          "kilometrar": "98.124",
+          "vottad": "Tékkland",
+          "kvittun": "./img/fake_kvittun.pdf",
+          "skiptUm": {
+            "frjokorn": "Já",
+            "oliusia": "Nei",
+            "kaelivokvi": "Nei",
+            "adblue": "Nei",
+            "rudupiss": "Já"
+          }
+        },
+        "smurning2": {
+          "dagsetning": "15.04.2019",
+          "kilometrar": "112.124",
+          "vottad": "Brimborg",
+          "kvittun": "./img/fake_kvittun.pdf",
+          "skiptUm": {
+            "frjokorn": "Já",
+            "oliusia": "Nei",
+            "kaelivokvi": "Nei",
+            "adblue": "Nei",
+            "rudupiss": "Já"
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "bilnumer": "abc12",
+      "typa": "Ferrari SF90 Stradale",
+      "argerd": "2021",
+      "akstur": "1234km",
+      "nyskrad": "19.09.2021",
+      "eigandi": {
+        "notendanafn": "admin",
+        "nafn": "Jón Jónsson",
+        "kennitala": "241200-2120",
+        "heimilisfang": "Bessastaðir 1, 115",
+        "simanumer": "+354 581-2345"
+      },
+      "tjonasaga": {
+        "fjoldiTjona": 0
+      },
+      "smurbok": {
+        "fjoldiSmurninga": 1,
+        "smurning1": {
+          "dagsetning": "22.12.2021",
+          "kilometrar": "908",
+          "vottad": "Tékkland",
+          "kvittun": "./img/fake_kvittun.pdf",
+          "skiptUm": {
+            "frjokorn": "Já",
+            "oliusia": "Nei",
+            "kaelivokvi": "Nei",
+            "adblue": "Nei",
+            "rudupiss": "Já"
+          }
+        }
+      }
+    },
+    {
+      "id": 3,
+      "bilnumer": "sex69",
+      "typa": "Dacia Duster",
+      "argerd": "2013",
+      "akstur": "250000km",
+      "nyskrad": "12.10.2018",
+      "eigandi": {
+        "notendanafn": "icetours",
+        "nafn": "IceTours Ehf",
+        "kennitala": "150422-5249",
+        "heimilisfang": "Martröð 69, 105",
+        "simanumer": "+354 420-6969"
+      },
+      "tjonasaga": {
+        "fjoldiTjona": 4,
+        "tjon1": {
+          "typa": "Velta",
+          "dagsetning": "15.04.2018",
+          "lagad": "20.07.2018",
+          "vottad": "Max1",
+          "kvittun": "./img/fake_kvittun.pdf",
+          "skiptUm":{
+            "skiptUm1": "Hurð, bílstjóra, framan",
+            "skiptUm2": "Framrúða",
+            "skiptUm3": "Öxull, framan"
+          }
+        },
+        "tjon2": {
+          "typa": "Velta",
+          "dagsetning": "15.04.2018",
+          "lagad": "20.07.2018",
+          "vottad": "Max1",
+          "kvittun": "./img/fake_kvittun.pdf",
+          "skiptUm":{
+            "skiptUm1": "Hurð, bílstjóra, framan",
+            "skiptUm2": "Framrúða",
+            "skiptUm3": "Öxull, framan"
+          }
+        },
+        "tjon3": {
+          "typa": "Velta",
+          "dagsetning": "15.04.2018",
+          "lagad": "20.07.2018",
+          "vottad": "Max1",
+          "kvittun": "./img/fake_kvittun.pdf",
+          "skiptUm":{
+            "skiptUm1": "Hurð, bílstjóra, framan",
+            "skiptUm2": "Framrúða",
+            "skiptUm3": "Öxull, framan"
+          }
+        },
+        "tjon4": {
+          "typa": "Velta",
+          "dagsetning": "15.04.2018",
+          "lagad": "20.07.2018",
+          "vottad": "Max1",
+          "kvittun": "./img/fake_kvittun.pdf",
+          "skiptUm":{
+            "skiptUm1": "Hurð, bílstjóra, framan",
+            "skiptUm2": "Framrúða",
+            "skiptUm3": "Öxull, framan"
+          }
+        }
+      },
+      "smurbok": {
+        "fjoldiSmurninga": 12,
+        "smurning1": {
+          "dagsetning": "15.04.2018",
+          "kilometrar": "98.124",
+          "vottad": "Tékkland",
+          "kvittun": "./img/fake_kvittun.pdf",
+          "skiptUm": {
+            "frjokorn": "Já",
+            "oliusia": "Nei",
+            "kaelivokvi": "Nei",
+            "adblue": "Nei",
+            "rudupiss": "Já"
+          }
+        },
+        "smurning2": {
+          "dagsetning": "15.04.2019",
+          "kilometrar": "112.124",
+          "vottad": "Brimborg",
+          "kvittun": "./img/fake_kvittun.pdf",
+          "skiptUm": {
+            "frjokorn": "Já",
+            "oliusia": "Nei",
+            "kaelivokvi": "Nei",
+            "adblue": "Nei",
+            "rudupiss": "Já"
+          }
+        },
+        "smurning3": {
+          "dagsetning": "15.04.2019",
+          "kilometrar": "112.124",
+          "vottad": "Brimborg",
+          "kvittun": "./img/fake_kvittun.pdf",
+          "skiptUm": {
+            "frjokorn": "Já",
+            "oliusia": "Nei",
+            "kaelivokvi": "Nei",
+            "adblue": "Nei",
+            "rudupiss": "Já"
+          }
+        },
+        "smurning4": {
+          "dagsetning": "15.04.2019",
+          "kilometrar": "112.124",
+          "vottad": "Brimborg",
+          "kvittun": "./img/fake_kvittun.pdf",
+          "skiptUm": {
+            "frjokorn": "Já",
+            "oliusia": "Nei",
+            "kaelivokvi": "Nei",
+            "adblue": "Nei",
+            "rudupiss": "Já"
+          }
+        },
+        "smurning5": {
+          "dagsetning": "15.04.2019",
+          "kilometrar": "112.124",
+          "vottad": "Brimborg",
+          "kvittun": "./img/fake_kvittun.pdf",
+          "skiptUm": {
+            "frjokorn": "Já",
+            "oliusia": "Nei",
+            "kaelivokvi": "Nei",
+            "adblue": "Nei",
+            "rudupiss": "Já"
+          }
+        },
+        "smurning6": {
+          "dagsetning": "15.04.2019",
+          "kilometrar": "112.124",
+          "vottad": "Brimborg",
+          "kvittun": "./img/fake_kvittun.pdf",
+          "skiptUm": {
+            "frjokorn": "Já",
+            "oliusia": "Nei",
+            "kaelivokvi": "Nei",
+            "adblue": "Nei",
+            "rudupiss": "Já"
+          }
+        },
+        "smurning7": {
+          "dagsetning": "15.04.2019",
+          "kilometrar": "112.124",
+          "vottad": "Brimborg",
+          "kvittun": "./img/fake_kvittun.pdf",
+          "skiptUm": {
+            "frjokorn": "Já",
+            "oliusia": "Nei",
+            "kaelivokvi": "Nei",
+            "adblue": "Nei",
+            "rudupiss": "Já"
+          }
+        },
+        "smurning8": {
+          "dagsetning": "15.04.2019",
+          "kilometrar": "112.124",
+          "vottad": "Brimborg",
+          "kvittun": "./img/fake_kvittun.pdf",
+          "skiptUm": {
+            "frjokorn": "Já",
+            "oliusia": "Nei",
+            "kaelivokvi": "Nei",
+            "adblue": "Nei",
+            "rudupiss": "Já"
+          }
+        },
+        "smurning9": {
+          "dagsetning": "15.04.2019",
+          "kilometrar": "112.124",
+          "vottad": "Brimborg",
+          "kvittun": "./img/fake_kvittun.pdf",
+          "skiptUm": {
+            "frjokorn": "Já",
+            "oliusia": "Nei",
+            "kaelivokvi": "Nei",
+            "adblue": "Nei",
+            "rudupiss": "Já"
+          }
+        },
+        "smurning10": {
+          "dagsetning": "15.04.2019",
+          "kilometrar": "112.124",
+          "vottad": "Brimborg",
+          "kvittun": "./img/fake_kvittun.pdf",
+          "skiptUm": {
+            "frjokorn": "Já",
+            "oliusia": "Nei",
+            "kaelivokvi": "Nei",
+            "adblue": "Nei",
+            "rudupiss": "Já"
+          }
+        },
+        "smurning11": {
+          "dagsetning": "15.04.2019",
+          "kilometrar": "112.124",
+          "vottad": "Brimborg",
+          "kvittun": "./img/fake_kvittun.pdf",
+          "skiptUm": {
+            "frjokorn": "Já",
+            "oliusia": "Nei",
+            "kaelivokvi": "Nei",
+            "adblue": "Nei",
+            "rudupiss": "Já"
+          }
+        },
+        "smurning12": {
+          "dagsetning": "15.04.2019",
+          "kilometrar": "112.124",
+          "vottad": "Brimborg",
+          "kvittun": "./img/fake_kvittun.pdf",
+          "skiptUm": {
+            "frjokorn": "Já",
+            "oliusia": "Nei",
+            "kaelivokvi": "Nei",
+            "adblue": "Nei",
+            "rudupiss": "Já"
+          }
+        }
+      }
+    }
+  ]

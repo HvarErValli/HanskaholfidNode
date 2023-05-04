@@ -1,0 +1,48 @@
+[
+    {
+      "notendanafn": "user",
+      "netfang": "user@example.com",
+      "lykilord": "user",
+      "notendaTypa": "notandi",
+      "fjoldiBila": "1",
+      "bilar_id": "1",
+      "nafn": "Valgeir Níls Vignisson",
+      "kennitala": "230102-2790",
+      "heimilisfang": "Bakkasel 31, 109",
+      "simanumer": "+354 666-0812"
+    },
+    {
+      "notendanafn": "admin",
+      "netfang": "admin@example.com",
+      "lykilord": "admin",
+      "notendaTypa": "notandi",
+      "fjoldiBila": "1",
+      "bilar_id": "2",
+      "nafn": "Jón Jónsson",
+      "kennitala": "241200-2120",
+      "heimilisfang": "Bessastaðir 1, 115",
+      "simanumer": "+354 581-2345"
+      },
+    {
+      "notendanafn": "icetours",
+      "netfang": "icetours@example.com",
+      "lykilord": "icetours",
+      "notendaTypa": "notandi",
+      "fjoldiBila": "1",
+      "bilar_id": "3"	,
+      "nafn": "IceTours Ehf",
+      "kennitala": "150422-5249",
+      "heimilisfang": "Martröð 69, 105",
+      "simanumer": "+354 420-6969"
+    },
+    {
+      "notendanafn": "Brimborg",
+      "netfang": "brimborg@example.com",
+      "lykilord": "brimborg",
+      "notendaTypa": "rekstraraðili",
+      "nafn": "Brimborg Ehf",
+      "kennitala": "000000-0000",
+      "heimilisfang": "Ísland",
+      "simanumer": "+354 000-0000"
+    }
+  ]
