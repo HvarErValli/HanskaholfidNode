@@ -91,7 +91,6 @@ function apigetFromDatabase(bilnumer) {
                 window.location.href = 'info';
             }
         });
-        alert("Þessi bíll er ekki á skrá hjá okkur");
     })
         .catch(error => alert('Þetta bílnúmer er ekki á skrá hjá okkur'));
 }
@@ -114,9 +113,15 @@ function apigetFromUsers(netfang, lykilord) {
                     }
                 }
                 else {
+                    const loginErrorMsg = document.getElementById("login-error-msg");
                     loginErrorMsg.style.opacity = 1;
                     setTimeout(function () { loginErrorMsg.style.opacity = 0; }, 1500);
                 }
+            }
+            else {
+                const loginErrorMsg = document.getElementById("login-error-msg");
+                loginErrorMsg.style.opacity = 1;
+                setTimeout(function () { loginErrorMsg.style.opacity = 0; }, 1500);
             }
         });
     })
@@ -273,7 +278,7 @@ function baetaVidTjoni(bilnumer) {
         .then(data => {
         data.forEach(car => {
             if (car.bilnumer == bilnumer.toLowerCase()) {
-                fjoldiTjona = car.tjonasaga.fjoldiTjona;
+                let fjoldiTjona = car.tjonasaga.fjoldiTjona;
                 tjonablocks(fjoldiTjona, bilnumer);
             }
         });
@@ -288,7 +293,7 @@ function baetaVidSmurningu(bilnumer) {
         .then(data => {
         data.forEach(car => {
             if (car.bilnumer == bilnumer.toLowerCase()) {
-                fjoldiSmurninga = car.smurbok.fjoldiSmurninga;
+                let fjoldiSmurninga = car.smurbok.fjoldiSmurninga;
                 smurblocks(fjoldiSmurninga, bilnumer);
             }
         });
@@ -394,7 +399,7 @@ function writeTjonToHTML(bilnumer, tjonNumer) {
                 document.getElementById(`tjonaflokkur${tjonNumer}`).innerHTML += eval(`car.tjonasaga.tjon${tjonNumer}.typa`);
                 document.getElementById(`lagad${tjonNumer}`).innerHTML += eval(`car.tjonasaga.tjon${tjonNumer}.lagad`);
                 document.getElementById(`lagadAf${tjonNumer}`).innerHTML += eval(`car.tjonasaga.tjon${tjonNumer}.vottad`);
-                kvittun = document.getElementById(`kvittun_link${tjonNumer}`);
+                let kvittun = document.getElementById(`kvittun_link${tjonNumer}`);
                 kvittun.setAttribute("href", eval(`car.tjonasaga.tjon${tjonNumer}.kvittun`));
                 document.getElementById(`skiptUm1-${tjonNumer}`).innerHTML += eval(`car.tjonasaga.tjon${tjonNumer}.skiptUm.skiptUm1`);
                 document.getElementById(`skiptUm2-${tjonNumer}`).innerHTML += eval(`car.tjonasaga.tjon${tjonNumer}.skiptUm.skiptUm2`);
@@ -417,7 +422,7 @@ function writeSmurningToHTML(bilnumer, smurningNumer) {
                 document.getElementById(`dagsetningSmurningar${smurningNumer}`).innerHTML += eval(`car.smurbok.smurning${smurningNumer}.dagsetning`);
                 document.getElementById(`kilometrar${smurningNumer}`).innerHTML += eval(`car.smurbok.smurning${smurningNumer}.kilometrar`);
                 document.getElementById(`verkstaedi${smurningNumer}`).innerHTML += eval(`car.smurbok.smurning${smurningNumer}.vottad`);
-                kvittun = document.getElementById(`kvittun_smurning_link${smurningNumer}`);
+                let kvittun = document.getElementById(`kvittun_smurning_link${smurningNumer}`);
                 kvittun.setAttribute("href", eval(`car.smurbok.smurning${smurningNumer}.kvittun`));
                 document.getElementById(`frjokorn${smurningNumer}`).innerHTML += eval(`car.smurbok.smurning${smurningNumer}.skiptUm.frjokorn`);
                 document.getElementById(`oliusia${smurningNumer}`).innerHTML += eval(`car.smurbok.smurning${smurningNumer}.skiptUm.oliusia`);

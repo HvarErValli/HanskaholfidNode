@@ -103,9 +103,7 @@ function apigetFromDatabase(bilnumer: string) {
                 localStorage.setItem('working_numer', bilnumer)
                 window.location.href = 'info'
             }
-            
         })
-        alert("Þessi bíll er ekki á skrá hjá okkur")
     })
     .catch(error => alert('Þetta bílnúmer er ekki á skrá hjá okkur'));
 };
@@ -126,11 +124,15 @@ function apigetFromUsers(netfang: string, lykilord: string) {
                         setTimeout(function(){window.location.href = "companyPage"}, 500);
                     }
                 } else {
+                    const loginErrorMsg = document.getElementById("login-error-msg");
                     loginErrorMsg.style.opacity = 1;
                     setTimeout(function(){loginErrorMsg.style.opacity = 0;}, 1500);
                    
-            }}
-        })
+            }} else {
+                const loginErrorMsg = document.getElementById("login-error-msg");
+                loginErrorMsg.style.opacity = 1;
+                setTimeout(function(){loginErrorMsg.style.opacity = 0;}, 1500);
+        }})
     })
     .catch(error => console.log(error));
 };
@@ -392,7 +394,7 @@ function writeTjonToHTML(bilnumer: string, tjonNumer: number){
                 document.getElementById(`tjonaflokkur${tjonNumer}`).innerHTML += eval(`car.tjonasaga.tjon${tjonNumer}.typa`); 
                 document.getElementById(`lagad${tjonNumer}`).innerHTML += eval(`car.tjonasaga.tjon${tjonNumer}.lagad`);
                 document.getElementById(`lagadAf${tjonNumer}`).innerHTML += eval(`car.tjonasaga.tjon${tjonNumer}.vottad`)
-                kvittun = document.getElementById(`kvittun_link${tjonNumer}`);
+                let kvittun = document.getElementById(`kvittun_link${tjonNumer}`);
                 kvittun.setAttribute("href", eval(`car.tjonasaga.tjon${tjonNumer}.kvittun`));
                 document.getElementById(`skiptUm1-${tjonNumer}`).innerHTML += eval(`car.tjonasaga.tjon${tjonNumer}.skiptUm.skiptUm1`);
                 document.getElementById(`skiptUm2-${tjonNumer}`).innerHTML += eval(`car.tjonasaga.tjon${tjonNumer}.skiptUm.skiptUm2`);
