@@ -123,31 +123,22 @@
     <!-- Service End -->
 
      <!-- Package Start -->
-     <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Þínir bílar</h6>
-                <h1 class="mb-5">Hér sérðu þína bíla</h1>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="package-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/one_car.jpg">
-                        </div>
-                        <div class="d-flex border-bottom">
-                            <small id="user_bilnumerOgTypa" class="flex-fill text-center border-end py-2"><i class="fa text-primary me-2"></i></small>
-                            <small id="user_nyskrad" class="flex-fill text-center py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>Nýskráður: </small>
-                        </div>
-                        <div class="text-center p-4">
-                            <h3 id="dagar_i_smurningu" class="mb-0"> dagar í næstu smurningu.</h3>
-                            <p id="sidasta_vidgerd" >Síðasta viðgerð: </p>
-                            <div class="d-flex justify-content-center mb-2">
-                                <a href="#" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Breyta</a>
-                                <a href="#" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Ný viðgerð</a>
-                            </div>
-                        </div>
-                    </div>
+    <div class="container py-5">
+        <div class="row justify-content-center py-5">
+            <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                <h1 class="display-3 text-black mb-3 animated slideInDown">Fletta upp bíl:</h1>
+                <div class="position-relative w-75 mx-auto animated slideInDown">
+                    <input id = "bilnumer" class="form-control border-2 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Bílnúmer á forminu ABC12:">
+                    <button onclick = "apigetFromDatabase(document.getElementById('bilnumer').value)" type="button" id = "leita_takki" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Leita</button>
+                    <script>
+                    var bilnumerid = document.getElementById("bilnumer");
+                    bilnumerid.addEventListener("keypress", function(event) {
+                        if (event.key === "Enter") {
+                            event.preventDefault();
+                            document.getElementById("leita_takki").click();
+                    }
+                    })
+                    </script>
                 </div>
             </div>
         </div>

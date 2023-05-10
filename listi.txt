@@ -1,0 +1,6 @@
+Það sem þarf að bæta við:
+    Notification center
+    Nýskráning usera
+    Nýskráning bíla
+    Bæta við help center (Hvað á að gera eftir árekstur, ef dísel á bensínbíl, ef sprungið dekk)
+    

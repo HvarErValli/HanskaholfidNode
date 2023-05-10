@@ -123,15 +123,7 @@ function apigetFromUsers(netfang: string, lykilord: string) {
                     } else if (user.notendaTypa == "rekstraraðili"){
                         setTimeout(function(){window.location.href = "companyPage"}, 500);
                     }
-                } else {
-                    const loginErrorMsg = document.getElementById("login-error-msg");
-                    loginErrorMsg.style.opacity = 1;
-                    setTimeout(function(){loginErrorMsg.style.opacity = 0;}, 1500);
-                   
-            }} else {
-                const loginErrorMsg = document.getElementById("login-error-msg");
-                loginErrorMsg.style.opacity = 1;
-                setTimeout(function(){loginErrorMsg.style.opacity = 0;}, 1500);
+                }
         }})
     })
     .catch(error => console.log(error));
@@ -471,3 +463,27 @@ function minSida(){
     })
     .catch(error => console.log(error));
 }
+
+/*
+const transporter = createTransport({
+    host: "smtp-relay.sendinblue.com",
+    port: 587,
+    auth: {
+        user: "valgeir22@ru.is",
+        pass: "jKYwfU1OIdbzWsG7"
+    }
+});
+
+export async function sendResponse(
+    toEmail: string,
+    toName: string
+) {
+    await transporter.sendMail({
+        from: "noreply@hanskaholfid.is",
+        to: toEmail,
+        sunject: "Takk fyrir að senda á Hanskahólfið",
+        html: `<p>Góðan daginn ${toName}.\n
+        Takk fyrir að senda á Hanskahólfið. Við munum svara þér um leið og við getum.<\p>`
+    })
+}
+*/
